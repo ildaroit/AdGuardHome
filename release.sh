@@ -13,9 +13,8 @@ f() {
 	elif [[ $GOOS == windows ]]; then
 	    zip dist/AdGuardHome_"$version"_Windows.zip AdGuardHome.exe README.md LICENSE.TXT
 	else
-	    tar zcvf dist/AdGuardHome_"$version"_"$GOOS"_"$GOARCH".tar.gz ./{AdGuardHome,LICENSE.TXT,README.md}
+	    tar zcvf dist/AdGuardHome_"$version"_"$GOOS"_"$GOARCH".tar.gz AdGuardHome README.md LICENSE.TXT
 	fi
-	make cleanfast
 }
 
 # Clean and rebuild both static and binary
