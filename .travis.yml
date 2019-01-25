@@ -36,12 +36,9 @@ after_success:
 matrix:
   include:
     # Release build configuration
-    - language: go
-      sudo: false
-
+    - name: release
       go:
         - 1.11.x
-
       os:
         - linux
 
