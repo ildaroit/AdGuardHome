@@ -49,7 +49,7 @@ matrix:
         - go test -race -v -bench=. ./...
         # Prepare releases
         - ./release.sh
-        - ls -l dist/AdGuardHome-*
+        - ls -l dist
 
       deploy:
         provider: releases
