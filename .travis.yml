@@ -55,8 +55,7 @@ matrix:
         provider: releases
         api_key: $GITHUB_TOKEN
         file:
-          - dist/AdGuardHome-*.zip
-          - dist/AdGuardHome-*.tar.gz
+          - dist/AdGuardHome_*
         on:
           repo: AdguardTeam/AdGuardHome
           branch: feature/travis_release_build
